@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>CRUDS-PROJECT</title>
+<link rel="stylesheet" href="cruds.css">
+<meta charset="UTF-8">
+</head>
+<body>
+
+ <div class="cruds">
+    <div class="head">
+        <h2>cruds</h2>
+        <p> product management system</p>
+    </div>
+    <div id="inputs">   
+<input id= "title" placeholder="title" type="text">
+<div class="price">
+    <input onkeyup="gettotal()" type="number" id="price"   placeholder="price">
+    <input onkeyup="gettotal()" type="number" id="taxes" placeholder="taxes">
+    <input onkeyup="gettotal()" type="number" id="ads" placeholder="ads" >
+    <input onkeyup="gettotal()" type="number" id="discount" placeholder="discount" >
+    <small  id="total"></small>
+</div>
+<input id="count" placeholder="count" type="number">
+<input id="category" placeholder="category" type="text">
+    <button id="submit">creat</button>
+    
+    <div class="outputs">
+<div class="searchBlock">
+<input type="text" id="search"  placeholder="search">
+<div class="btnsearch">
+    <button id="searchtitle"> search by title</button>
+    <button id="searchcategory">search by category</button>
+</div>
+</div>
+</div>
+<div id="deleteall" class="hide"></div>
+<table>
+<tr>
+    <th>id</th>
+    <th>title</th>
+    <th>price</th>
+    <th>taxes</th>
+    <th>ads</th>
+    <th>discount</th>
+    <th>total</th>
+    <th>caregory</th>
+    <th>update</th>
+    <th>delete</th>
+</tr>
+<tbody id="tbody">
+    <tr>
+    </tr>
+</tbody>
+</table>
+
+</div>
+</div>
+</div>
+</div>
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+    <script src="cruds.js"></script>
+</body>
+
+
+
+
+
+
+
+
+
+</html>
